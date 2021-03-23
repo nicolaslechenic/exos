@@ -1,0 +1,516 @@
+/* Ajout des liens vers polices */
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../fonts/caviardreams-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../fonts/caviardreams_bold-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsbold_italic';
+    src: url('../fonts/caviardreams_bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'caviar_dreamsitalic';
+    src: url('../fonts/caviardreams_italic-webfont.woff2') format('woff2'),
+         url('../fonts/caviardreams_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'antipasto_proextrabold';
+    src: url('../fonts/antipasto-pro-extrabold-trial-webfont.woff2') format('woff2'),
+         url('../fonts/antipasto-pro-extrabold-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'antipasto_proextralight';
+    src: url('../fonts/antipasto-pro-extralight-trial-webfont.woff2') format('woff2'),
+         url('../fonts/antipasto-pro-extralight-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'antipasto_pro_regular';
+    src: url('../fonts/antipasto-pro-regular-trial-webfont.woff2') format('woff2'),
+         url('../fonts/antipasto-pro-regular-trial-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Généralités */
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    list-style-type: none;
+}
+/*variables*/
+:root{
+    --footer-bg:#bcaa9b;
+    --bloc-rose:#f0e1d5;
+    --boutons:#e2bd9f;
+    --etoiles:#AB0505;
+}
+body{
+    font-family: 'caviar_dreamsregular',Arial,sans-serif;
+    font-size:18px;
+}
+#propose h2{
+    font-family: 'antipasto_pro_regular',Arial,sans-serif;
+    text-align:center;
+    width:100%;
+    padding:20px 0;
+}
+h2 i{
+    color:var(--etoiles);
+    margin-left:5px;
+}
+.largeurmax{
+    max-width:1200px;
+    width:100%;
+    margin:0 auto;
+    /*background-color: aqua;*/
+}
+/*----- slider --------------*/
+#position-top{
+    position:relative;
+	width:100%;
+}
+.nivo-controlNav{
+    display:none;
+}
+#top .slider-wrapper{
+	width:100%;
+	height:500px;
+	}
+.nivoSlider{
+        height:500px;
+ }
+/*-----------------------*/
+#top{
+background-color:rgba(255, 255, 255, 0.5);
+position:absolute;
+top:0;
+width:100%;
+z-index:10000;
+}
+
+#top .largeurmax{
+    display:flex;
+    justify-content: space-between;
+}
+#top #logo{
+    width:40%;
+}
+#top #logo figcaption h1{
+    font-size:1.8rem;
+    font-family: 'antipasto_pro_regular';
+}
+#menuprincipal{
+   width:60%;
+   display:flex;
+   flex-direction:column;
+   justify-content: space-between;
+   align-items:flex-end;
+   padding-bottom:5px;
+}
+/* formulaire de recherche----------------------- */
+#searchform{
+    border:1px solid #ccc;
+    background-color: white;
+    width:25%;
+    height:30px;
+    line-height:30px;
+    display:flex;
+    justify-content: space-between;
+}
+#searchform input#search{
+    padding-left:5px;
+}
+#searchform input#search,#searchform button{
+    border:none;
+}
+#searchform i{
+    cursor:pointer;
+    padding-right:5px;
+}
+/* menu principal---------------------------- */
+#menuprincipal ul{
+    display:flex;
+}
+#burger i{
+    display: none;
+}
+#menuprincipal ul li{
+    margin-left:20px;
+}
+#menuprincipal ul li a{ 
+    font-family: 'antipasto_proextrabold';
+    color:black;
+    font-size:1.5rem;
+}
+#menuprincipal ul li a:hover, #menuprincipal ul li a.pagecourante{
+    color:var(--etoiles);
+} 
+
+#contenu{}
+#propose{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#propose .en-avant{
+    width:23%;
+    background-color:var(--bloc-rose);
+    padding:15px 0.5%;
+    text-align:center;
+    
+}
+#propose .en-avant img{
+    width:25%;
+    margin-top:15px;
+}
+#propose .en-avant p{
+    width:90%;
+    text-align:justify;
+    margin:10px auto;
+    min-height:165px;
+    font-size:0.95rem;
+}
+#propose .en-avant a{
+    background-color: var(--boutons);
+    color:black;
+    padding:5px 10px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    margin-bottom:10px;
+}
+#destination .lieu h3{
+    margin-bottom:30px;
+}
+#destination .lieu img{
+    float:right;
+    width:55%;
+    margin-left:1.8%;
+}
+#temoignages{
+    clear:right;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#temoignages .avis{
+    width:49%;
+    background-color:var(--bloc-rose);
+    display:flex;
+    justify-content: space-between;
+}
+#temoignages .avis .text-avis{
+    padding:10px 20px;
+}
+#temoignages .avis .text-avis i{
+    color:var(--etoiles);
+    font-size:2rem;
+    margin-bottom:40px;
+}
+#temoignages .avis .text-avis p{
+    margin-left:20px;
+}
+#temoignages .avis .text-avis p.signature{
+    margin-left:0;
+    margin-top:40px;
+}
+#temoignages .avis img{
+    width:50%;
+}
+#bottom{
+    margin-top:40px;
+    background-color:var(--footer-bg);
+}
+#bottom .largeurmax{
+    display:flex;
+    justify-content: space-between;
+}
+#reseaux ul{
+    display:flex;
+}
+#reseaux ul li{
+    margin-top:40px;
+    margin-right:15px;
+}
+#reseaux ul li a i{
+    text-align:center;
+    padding-top:3px;
+    color:red;
+    background-color: white;
+    width:32px;
+    height:29px;
+    font-size:1.5rem;
+    border-radius:50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+}
+#copyright{
+    text-align:right;
+    padding:10px 0;
+}
+#copyright img{
+    margin-top:40px;
+    width:30%;
+}
+#copyright a{
+    color:black;
+}
+
+/*-----------------page blog-------------------*/
+#ariane{
+    padding-top:200px;
+    padding-bottom:30px;
+}
+#ariane a{
+    color:dimgrey;
+}
+#leblog{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#leblog .post{
+    background-color: #f9eee5;
+    width:48%;
+    display:flex;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-bottom:15px;
+}
+#leblog .post .photo-post {
+    width:65%;
+    position :relative;
+}
+#leblog .post .photo-post .text-post{
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+}
+#leblog .post .photo-post:hover .text-post{
+    width:96%;
+    height:96%;
+    padding:2%;
+    font-family: 'caviar_dreamsbold';
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size:0.9rem;
+    display:block;
+}
+#leblog .post .photo-post {
+    width:90%;
+}
+#leblog .post .photo-post img {
+    width:100%;
+    height:100%;
+}
+#leblog .post .titre-post h3{
+    font-family: 'antipasto_proextrabold';
+    text-align:right;
+    padding-right:5px;
+    color:darkslategrey;
+}
+#leblog .post .titre-post a{
+    background-color: var(--boutons);
+    color:black;
+    padding:5px 10px;
+    width:30%;
+   display:block;
+   margin:80px auto;
+}
+.pagination{
+    width:100%;
+    text-align: center;
+}
+.pagination a{
+    color:dimgrey;
+}
+/*----------------single post -----------------*/
+.lepost{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.lepost h1{
+    font-family: 'antipasto_proextrabold';
+    font-size:2.3rem;
+}
+.lepost .col1-lepost{
+   width:48%; 
+}
+.lepost .col1-lepost .galerie-lepost img{
+    width:30%;
+    margin-top:20px;
+}
+.lepost .col2-lepost{
+    width:48%; 
+ }
+ .lepost .col2-lepost .photo-lepost img{
+    width:100%;
+}
+
+.presta-lepost ul{
+    width:80%;
+    column-count: 2;
+}
+.presta-lepost ul li{
+    line-height:30px;
+}
+/*-------------contact--------------------*/
+#contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+#cntact .colonne-contact{
+    width: 46%;
+}
+#contact fieldset{
+    padding: 20px;
+    margin: 20, 0;
+    border: 2px dotted #bcaa9b;
+}
+#contact fieldset legend{
+    color: #bcaa9b;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+#contact p{
+    margin: 8px 0;
+}
+#contact fieldset:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+#contact .formcolonne{
+    width: 46%;
+}
+#contact label{
+    display: inline-block;
+    width: 110px;
+}
+#contact label.small{
+    width: 80px;
+}
+#contact .bouton-form{
+    text-align: center;
+}
+#contact .bouton-form input{
+    padding: 8px 15px;
+    margin: 0 10px;
+    background-color: var(--boutons);
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+#contact fieldset input[type=text],
+#contact fieldset input[type=email],
+#contact fieldset input[type=tel],
+#contact fieldset textarea{
+    padding: 3px 5px;
+    font-size: 0.9rem;
+}
+#contact fieldset input:focus,
+#contact fieldset textarea:focus,
+#contact fieldset select:focus{
+    background-color: #CCC;
+}
+#contact address{
+    font-style: normal;
+    margin-top: 40px;
+}
+#contact address h2{
+    font-family: 'antipasto_pro_regular';
+}
+#contact iframe{
+    width: 90%;
+    height: 300px;
+    border: none;
+    margin-top: 40px;
+}
+
+/*----------------mediaquery----------------------*/
+/*----------------mediaquery----------------------*/
+/*----------------mediaquery----------------------*/
+/*----------------mediaquery----------------------*/
+
+
+@media screen and (max-width: 768px){
+    body{
+
+    }
+    .slider-wrapper{
+        display: none;
+    }
+    #top{
+        position: initial;
+    }
+    #propose{
+        justify-content:space-around;
+
+    }
+    #propose .en-avant{
+        width: 43%;
+        margin-bottom: 20px;
+    }
+    #destination .lieu img{
+        float: none;
+        width: 100%;
+        order: 3;
+    }
+    #destination .lieu{
+        display: flex;
+        flex-direction: column;
+    }
+   
+    #temoignages .avis{
+        width: 96%;
+        margin-bottom: 20px;
+    }
+    #burger i{
+        display: block;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    #menuprincipal ul{
+        display: none;
+        flex-direction: column;
+    }
+    #burger a{
+        color: black;
+    }
+}

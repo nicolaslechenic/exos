@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacter Yulbaba, voyages Zen</title>
+    <!-- styles de nivo slider-->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="position-top">
+    <header id="top" style="position: fixed;background-color:rgba(252, 220, 183, 0.5);">
+        <div class="largeurmax">
+            <figure id="logo">
+                <a href="index.html">
+                    <img src="images-site/logo.png" alt="www.yulbaba.com">
+                </a>
+                <figcaption><h1>Voyage, Lifestyle et Zen Attitude</h1></figcaption>
+            </figure>
+            <nav id="menuprincipal">
+                <form action="rechercher.php" method="get" id="searchform">
+                    <input type="search" placeholder="Rechercher" id="search" name="search">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html" class="pagecourante">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+</div>
+    <main id="contenu" class="largeurmax">
+        <div id="ariane">
+           <a href="#">Accueil</a> | Contact
+        </div>
+        <div id="contact">
+            <div class="colonne-contact">
+                <h1>Nous contacter</h1>
+                <form action="envoismail.php" method="post">
+                    <fieldset>
+                        <legend>Vos coordonnées</legend>
+                        <div class="formcolonne">
+                            <p>
+                                <label for="nom">Nom</label>
+                                <input type="text" name="nom" placeholder="Tapez votre nom">
+                            </p>
+                            <p>
+                                <label for="prenom">Prénom</label>
+                                <input type="text" name="prénom" placeholder="Tapez votre prénom">
+                            </p>
+                            <p>
+                                <label for="email">Email</label>
+                                <input type="email" name="email" placeholder="Tapez votre email">
+                            </p>
+                            <p>
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" name="phone" placeholder="Tapez votre téléphone">
+                            </p>
+                        </div>
+                        <div class="formcolonne">
+                        <p>
+                            <label for="cp">Code postal</label>
+                            <input type="text" name="cp" placeholder="Tapez votre code postal">
+                        </p>
+                        <p>
+                            <label for="ville">Ville</label>
+                            <input type="text" name="ville" placeholder="Tapez votre ville">
+                        </p>
+                        <p>
+                            <label for="adresse">Adresse</label>
+                            <textarea name="adresse" placeholder="Tapez votre adresse"></textarea>
+                        </p>
+                        <p>
+                            <label for="pays">Pays</label>
+                            <select name="pays" id="pays">
+                                <option>Choisissez un pays</option>
+                                <option value="FR">France</option>
+                                <option value="I">Italie</option>
+                                <option value="CH">Suisse</option>
+                            </select>
+                        </p>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Votre message</legend>
+                        <p>
+                            Les continents qui vous intéressent: <br>
+                            <input type="checkbox" name="continent" id="europe" value="europe">
+                            <label for="europe" class="small">Europe</label>
+                            <input type="checkbox" name="continent" id="amerique" value="amerique">
+                            <label for="amerique" class="small">Amerique</label>
+                            <input type="checkbox" name="continent" id="asie" value="asie">
+                            <label for="asie" class="small">Asie</label>
+                            <input type="checkbox" name="continent" id="oceanie" value="oceanie">
+                            <label for="oceanie">Océanie</label>
+                        </p>
+                        <p>
+                            <label for="message">Message</label>
+                            <textarea name="message" placeholder="Tapez votre message"></textarea>
+                        </p>
+                    </fieldset>
+                    <p class="bouton-form">
+                        <input type="submit" value="Envoyer"><input type="reset" value="Annuler">
+                    </p>
+                </form>
+             </div><!--Fin colonne gauche -->
+             <div class="colone-contact">
+                 <address>
+                     <h2>Yulbaba</h2>
+                     <p>AILLEURS ET AUTREMENT TRAVEL</p>
+                     <p>16 rue du Four Mollet</p>
+                     <p>56450 AURAY</p>
+                     <p>Tel: 0000000000</p>
+                 </address>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.9277582034847!2d-2.991217085154145!3d47.6663997918396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x481014403ccb6c21%3A0x48a35b61d2c4c13f!2s16%20Rue%20du%20Four%20Mollet%2C%2056400%20Auray!5e0!3m2!1sfr!2sfr!4v1615197646914!5m2!1sfr!2sfr" allowfullscreen="" loading="lazy"></iframe>
+               
+             </div>
+        </div>
+      
+    </div>
+ </main>
+    <footer id="bottom">
+        <div class="largeurmax">
+            <div id="reseaux">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <img src="images-site/logo.png" alt="yulbaba">
+                <p>Copyright Yulbaba 2021</p>
+                <p><a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever#MyMauritius | Yulbaba, voyages Zen</title>
+    <!-- styles de nivo slider-->
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="position-top">
+    <header id="top" style="position: fixed;background-color:rgba(252, 220, 183, 0.5);">
+        <div class="largeurmax">
+            <figure id="logo">
+                <a href="index.html">
+                    <img src="images-site/logo.png" alt="www.yulbaba.com">
+                </a>
+                <figcaption><h1>Voyage, Lifestyle et Zen Attitude</h1></figcaption>
+            </figure>
+            <nav id="menuprincipal">
+                <form action="rechercher.php" method="get" id="searchform">
+                    <input type="search" placeholder="Rechercher" id="search" name="search">
+                    <button type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                </form>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="apropos.html">A propos</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="blog.html" class="pagecourante">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+</div>
+    <main id="contenu" class="largeurmax">
+        <div id="ariane">
+           <a href="#">Accueil</a> | <a href="#">Le Blog</a> | Forever #MyMauritius
+        </div>
+        <div class="lepost">
+            <div class="col1-lepost">
+            <h1>Forever #MyMauritius</h1>
+            <div class="text-lepost">
+                <p>Bientôt deux mois que je suis rentrée de #MyMauritius. La pluie, le froid, les feuilles qui 
+                    jaunissent et commencent à tomber, ça sent à plein nez l’arrivée de l’hiver.<br>Depuis quelques 
+                    jours je me laisse emporter par un vent de nostalgie de ces 5 jours passés à l’île Maurice. 
+                    Là, tout de suite, j’aimerais quitter Paris, partir dans l’hémisphère sud, laisser passer les 
+                    prochains mois pour mieux revenir aux beaux jours.<br>Bon ce n’est malheureusement pas prévu au 
+                    programme alors je rêve sur le net où de temps à autres de belles images viennent me rappeler 
+                    de bons souvenirs. Juste de quoi tenir jusqu’au prochain départ vers une destination ensoleillée 
+                    (ou pas).</p>
+            </div>
+            <figure class="galerie-lepost">
+            <img src="images-site/blog1.jpg" alt="blog1">
+            <img src="images-site/blog1.jpg" alt="blog1">
+            <img src="images-site/blog1.jpg" alt="blog1">
+            </figure>
+             </div><!--Fin colonne gauche -->
+             <div class="col2-lepost">
+                <figure class="photo-lepost">  
+                <img src="images-site/blog1.jpg" alt="blog1">
+                </figure>
+                <div class="presta-lepost">
+                    <ul>
+                        <li><i class="fa fa-thermometer-half" aria-hidden="true"></i> min: 20° </li>
+                        <li><i class="fa fa-music" aria-hidden="true"></i> Concerts fréquents  </li>
+                        <li><i class="fa fa-bicycle" aria-hidden="true"></i> A louer sur place</li>
+                        <li><i class="fa fa-car" aria-hidden="true"></i> Location aéroport</li>
+                        <li><i class="fa fa-plane" aria-hidden="true"></i> Aérodrome</li>                    
+                        <li><i class="fa fa-heart" aria-hidden="true"></i> +++</li>    
+                    </ul>
+                </div>
+             </div>
+        </div>
+      
+    </div>
+ </main>
+    <footer id="bottom">
+        <div class="largeurmax">
+            <div id="reseaux">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div id="copyright">
+                <img src="images-site/logo.png" alt="yulbaba">
+                <p>Copyright Yulbaba 2021</p>
+                <p><a href="#">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+</body>
+</html>
